@@ -1,0 +1,60 @@
+hw_2=> --4c
+hw_2=> SELECT country2
+hw_2-> FROM Borders
+hw_2-> WHERE country1 = 'Germany';
+    country2
+----------------
+ Poland
+ Czech Republic
+ Austria
+ France
+ Luxembourg
+ Belgium
+ Netherlands
+ Switzerland
+(8 rows)
+
+
+hw_2=> --4d All population > 35 mil
+hw_2=> SELECT name
+hw_2-> FROM Countries
+hw_2-> WHERE population > 35000000;
+  name
+---------
+ Germany
+ Poland
+ France
+(3 rows)
+
+
+hw_2=> --4e population > 35 mil and border Germany
+hw_2=> Select name
+hw_2-> From Countries, Borders
+hw_2-> WHERE 'Germany' = country1 and population > 35000000;
+  name
+---------
+ Germany
+ Germany
+ Germany
+ Germany
+ Germany
+ Germany
+ Germany
+ Germany
+ Poland
+ Poland
+ Poland
+ Poland
+ Poland
+ Poland
+ Poland
+ Poland
+ France
+ France
+ France
+ France
+ France
+ France
+ France
+ France
+(24 rows)
