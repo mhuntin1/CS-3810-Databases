@@ -1,0 +1,32 @@
+/*Mark Huntington
+Homework #7: Small MongoDB
+CS 3810
+*/
+
+db.createCollection('Flights');
+
+db.Flights.insert({"origin_city":"New York","destination_city":"London","flight_number":"15","airline_id":"116","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"10:00am","arrival_date":"12/10/17","arrival_time":"12:15pm"}); 
+db.Flights.insert({"origin_city":"Chicago","destination_city":"London","flight_number":"16","airline_id":"116","flight_length":"3hr 15min","departure_date":"12/10/17","departure_time":"10:00am","arrival_date":"12/10/17","arrival_time":"1:15pm"}); 
+db.Flights.insert({"origin_city":"New York","destination_city":"Toronto","flight_number":"17","airline_id":"116","flight_length":"1hr 15min","departure_date":"12/10/17","departure_time":"1:00am","arrival_date":"12/10/17","arrival_time":"2:15am"}); 
+db.Flights.insert({"origin_city":"Chicago","destination_city":"Toronto","flight_number":"18","airline_id":"116","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"9:00am","arrival_date":"12/11/17","arrival_time":"11:15am"}); 
+db.Flights.insert({"origin_city":"London","destination_city":"France","flight_number":"19","airline_id":"117","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"12:00am","arrival_date":"12/10/17","arrival_time":"2:15pm"}); 
+db.Flights.insert({"origin_city":"London","destination_city":"Toronto","flight_number":"20","airline_id":"117","flight_length":"4hr 15min","departure_date":"12/10/17","departure_time":"9:00am","arrival_date":"12/10/17","arrival_time":"1:15pm"}); 
+db.Flights.insert({"origin_city":"Edinburgh","destination_city":"France","flight_number":"21","airline_id":"117","flight_length":"1hr 15min","departure_date":"12/10/17","departure_time":"4:00am","arrival_date":"12/10/17","arrival_time":"5:15pm"}); 
+db.Flights.insert({"origin_city":"Edinburgh","destination_city":"Toronto","flight_number":"22","airline_id":"117","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"12:00pm","arrival_date":"12/10/17","arrival_time":"2:15pm"}); 
+db.Flights.insert({"origin_city":"Montreal","destination_city":"London","flight_number":"23","airline_id":"115","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"1:00am","arrival_date":"12/10/17","arrival_time":"3:15pm"}); 
+db.Flights.insert({"origin_city":"Montreal","destination_city":"Edinburgh","flight_number":"24","airline_id":"115","flight_length":"2hr 30min","departure_date":"12/10/17","departure_time":"10:00am","arrival_date":"12/10/17","arrival_time":"12:30pm"}); 
+db.Flights.insert({"origin_city":"Toronto","destination_city":"London","flight_number":"25","airline_id":"115","flight_length":"2hr 15min","departure_date":"12/10/17","departure_time":"10:00am","arrival_date":"12/10/17","arrival_time":"12:15pm"}); 
+db.Flights.insert({"origin_city":"Toronto","destination_city":"Edinburgh","flight_number":"26","airline_id":"115","flight_length":"5hr 15min","departure_date":"12/10/17","departure_time":"10:00am","arrival_date":"12/10/17","arrival_time":"3:15pm"});
+
+db.createCollection('Customer');
+
+db.Customer.insert({"first_name":"Mark","last_name":"Huntington","email":"mh@gmail.com","phone_number":"7207899934","customer_id":1,"street":"13 1st Ave","city":"Denver","state_or_province":"Colorado","postal_code":"80201","country":"United States"}); 
+db.Customer.insert({"first_name":"Mike","last_name":"Huntington","email":"mikeh@gmail.com","phone_number":"3034539067","customer_id":2,"street":"14 1st Ave","city":"Denver","state_or_province":"Colorado","postal_code":"80201","country":"United States"});
+db.Customer.insert({"first_name":"Jeff","last_name":"Franken","email":"jeff@gmail.com","phone_number":"7199456421","customer_id":3,"street":"135 15th Ave","city":"Commerce City","state_or_province":"Colorado","postal_code":"80022","country":"United States"}); 
+db.Customer.insert({"first_name":"Rusty","last_name":"Shackleford","email":"rusty@rocketmail.com","phone_number":"3031234567","customer_id":4,"street":"148 Bell way","city":"Aurora","state_or_province":"Colorado","postal_code":"80012","country":"United States"});
+
+db.createCollection('Airlines');
+
+db.Airlines.insert({"name":"AirCan","country":"Canada","airline_id":"115"}); 
+db.Airlines.insert({"name":"United","country":"USA","airline_id":"116"}); 
+db.Airlines.insert({"name":"BA","country":"UK","airline_id":"117"});

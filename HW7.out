@@ -1,0 +1,221 @@
+> show collections
+Airlines
+Customer
+Flights
+> db.Airlines.find().pretty();
+{
+        "_id" : ObjectId("5a2e40a8ac196173b64ceb41"),
+        "name" : "AirCan",
+        "country" : "Canada",
+        "airline_id" : "115"
+}
+{
+        "_id" : ObjectId("5a2e40a8ac196173b64ceb42"),
+        "name" : "United",
+        "country" : "USA",
+        "airline_id" : "116"
+}
+{
+        "_id" : ObjectId("5a2e40abac196173b64ceb43"),
+        "name" : "BA",
+        "country" : "UK",
+        "airline_id" : "117"
+}
+> db.Customer.find().pretty();
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3d"),
+        "first_name" : "Mark",
+        "last_name" : "Huntington",
+        "email" : "mh@gmail.com",
+        "phone_number" : "7207899934",
+        "customer_id" : 1,
+        "street" : "13 1st Ave",
+        "city" : "Denver",
+        "state_or_province" : "Colorado",
+        "postal_code" : "80201",
+        "country" : "United States"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3e"),
+        "first_name" : "Mike",
+        "last_name" : "Huntington",
+        "email" : "mikeh@gmail.com",
+        "phone_number" : "3034539067",
+        "customer_id" : 2,
+        "street" : "14 1st Ave",
+        "city" : "Denver",
+        "state_or_province" : "Colorado",
+        "postal_code" : "80201",
+        "country" : "United States"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3f"),
+        "first_name" : "Jeff",
+        "last_name" : "Franken",
+        "email" : "jeff@gmail.com",
+        "phone_number" : "7199456421",
+        "customer_id" : 3,
+        "street" : "135 15th Ave",
+        "city" : "Commerce City",
+        "state_or_province" : "Colorado",
+        "postal_code" : "80022",
+        "country" : "United States"
+}
+{
+        "_id" : ObjectId("5a2e40a8ac196173b64ceb40"),
+        "first_name" : "Rusty",
+        "last_name" : "Shackleford",
+        "email" : "rusty@rocketmail.com",
+        "phone_number" : "3031234567",
+        "customer_id" : 4,
+        "street" : "148 Bell way",
+        "city" : "Aurora",
+        "state_or_province" : "Colorado",
+        "postal_code" : "80012",
+        "country" : "United States"
+}
+> db.Flights.find().pretty();
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb31"),
+        "origin_city" : "New York",
+        "destination_city" : "London",
+        "flight_number" : "15",
+        "airline_id" : "116",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "10:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "12:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb32"),
+        "origin_city" : "Chicago",
+        "destination_city" : "London",
+        "flight_number" : "16",
+        "airline_id" : "116",
+        "flight_length" : "3hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "10:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "1:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb33"),
+        "origin_city" : "New York",
+        "destination_city" : "Toronto",
+        "flight_number" : "17",
+        "airline_id" : "116",
+        "flight_length" : "1hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "1:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "2:15am"
+}
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb34"),
+        "origin_city" : "Chicago",
+        "destination_city" : "Toronto",
+        "flight_number" : "18",
+        "airline_id" : "116",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "9:00am",
+        "arrival_date" : "12/11/17",
+        "arrival_time" : "11:15am"
+}
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb35"),
+        "origin_city" : "London",
+        "destination_city" : "France",
+        "flight_number" : "19",
+        "airline_id" : "117",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "12:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "2:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a6ac196173b64ceb36"),
+        "origin_city" : "London",
+        "destination_city" : "Toronto",
+        "flight_number" : "20",
+        "airline_id" : "117",
+        "flight_length" : "4hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "9:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "1:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb37"),
+        "origin_city" : "Edinburgh",
+        "destination_city" : "France",
+        "flight_number" : "21",
+        "airline_id" : "117",
+        "flight_length" : "1hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "4:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "5:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb38"),
+        "origin_city" : "Edinburgh",
+        "destination_city" : "Toronto",
+        "flight_number" : "22",
+        "airline_id" : "117",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "12:00pm",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "2:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb39"),
+        "origin_city" : "Montreal",
+        "destination_city" : "London",
+        "flight_number" : "23",
+        "airline_id" : "115",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "1:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "3:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3a"),
+        "origin_city" : "Montreal",
+        "destination_city" : "Edinburgh",
+        "flight_number" : "24",
+        "airline_id" : "115",
+        "flight_length" : "2hr 30min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "10:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "12:30pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3b"),
+        "origin_city" : "Toronto",
+        "destination_city" : "London",
+        "flight_number" : "25",
+        "airline_id" : "115",
+        "flight_length" : "2hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "10:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "12:15pm"
+}
+{
+        "_id" : ObjectId("5a2e40a7ac196173b64ceb3c"),
+        "origin_city" : "Toronto",
+        "destination_city" : "Edinburgh",
+        "flight_number" : "26",
+        "airline_id" : "115",
+        "flight_length" : "5hr 15min",
+        "departure_date" : "12/10/17",
+        "departure_time" : "10:00am",
+        "arrival_date" : "12/10/17",
+        "arrival_time" : "3:15pm"
+}
